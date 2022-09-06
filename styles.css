@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Teko', sans-serif; 
+  }
+  
+  p{
+    line-height: 1.8;
+    text-align: initial;
+  }
+  /* Create three equal columns that floats next to each other */
+  .column1 {
+    margin-top: 150px;
+    margin-left: 300px;
+    height:600px;
+    float: left;
+    width: 20%;
+    padding: 70px;
+    align-content: center;
+    border-radius: 10px 0 0 10px;
+  }
+  .column2 {
+    margin-top: 150px;
+    height:600px;
+    float: left;
+    width: 20%;
+    padding: 70px;
+    align-content: center;
+  }
+  .column3 {
+    margin-top: 150px;
+    margin-right: 300px;
+    height:600px;
+    float: left;
+    width: 20%;
+    padding: 70px;
+    align-content: center;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .button1 {
+    background-color: white; 
+    border: none;
+    color: #FF9F29;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 70px;
+    cursor: pointer;
+    border-radius: 35px;
+  }
+
+  .button2 {
+    background-color: white; 
+    border: none;
+    color: #2F5D62;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 70px;
+    cursor: pointer;
+    border-radius: 35px;
+  }
+
+  .button3 {
+    background-color: white; 
+    border: none;
+    color: #053538;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 70px;
+    cursor: pointer;
+    border-radius: 35px;
+  }
+  
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column1 {
+      width: 80%;
+      height: 70%;
+      margin-left: 40px;
+      margin-top: 100px;
+      padding: 75px;
+      border-radius:  10px 10px 0 0;
+    }
+    .column2{
+        width: 80%;
+        height: 70%;
+        margin-top: 0;
+        margin-left: 40px;
+        padding: 75px;
+      }
+      .column3 {
+        width: 80%;
+        height: 70%;
+        margin-right: 0;
+        margin-bottom: 100px;
+        margin-top: 0;
+        margin-left: 40px;
+        padding: 75px;
+        border-radius: 0 0 10px 10px;
+      }
+
+}
